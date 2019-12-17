@@ -37,7 +37,7 @@ func Encode(length int) ([]byte, int, error) {
         }
     }
     if nbytes > 4 {
-        return []byte{}, 0, ErrMalformedRemainingLength
+        return buf, nbytes, ErrMalformedRemainingLength
     } else {
         return buf, nbytes, nil
     }
