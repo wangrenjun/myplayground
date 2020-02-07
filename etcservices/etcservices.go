@@ -6,7 +6,6 @@ import (
     "bufio"
     "unicode"
     "strings"
-    _ "fmt"
 )
 
 type Service struct {
